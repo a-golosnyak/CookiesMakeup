@@ -1,0 +1,94 @@
+.left {
+  .nav {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+  }
+  .nav li {
+    margin: 1px 0;
+    border: 1px solid #999;
+  }
+  .nav li a {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+  }
+  .dropbtn {
+    color: #CACBD1;
+    font-size: 17px;
+    border: none;
+    background-color: #333343;
+    padding: 11px 10px;
+    width: 260px;
+    text-align: left;
+    svg{
+      margin-right: 25px;
+    }
+    .arr:before {
+      content: '';
+      position: absolute;
+      top: 23px;
+      right: 10px;
+      margin-top: -5px;
+      pointer-events: none;
+      border-top: 6px solid #CACBD1;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+
+    .arr:after {
+      content: '';
+      position: absolute;
+      top: 23px;
+      right: 13px;
+      margin-top: -5px;
+      pointer-events: none;
+      border-top: 3px solid $left-background;
+      border-left: 3px solid transparent;
+      border-right: 3px solid transparent;
+    }
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    min-width: 200px;
+    background-color: #333343;
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #D2D2D2;
+    font-size: 16px;
+    padding: 15px 12px;
+    text-decoration: none;
+    display: block;
+    svg{
+      margin-right: 25px;
+    }
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #262D39
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #232936;
+  }
+}

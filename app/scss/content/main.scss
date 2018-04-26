@@ -1,0 +1,332 @@
+@import "article";
+
+.center{
+  display: flex;
+  flex-direction: column;
+  background-color: #EEEEEE;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  .content{
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;  
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    .indent-left{
+        min-width: 30px;
+    }
+    .indent-right{
+        min-width: 30px;
+    }
+
+    .content-wrapper{
+      max-width: 700px; 
+      width: 100%; 
+      min-width: 0px; 
+      flex-shrink: 1;
+      background-color: #EEEEEE;
+
+
+/*------------- Add article ---------------------------------*/
+      .add-article-block{   
+      display: flex; 
+      flex-direction: column;   
+      margin-bottom: 20px;
+      border: 1px solid lightgrey;
+      background-color: #FEFEFE;          /***********/
+      min-height: 30%;
+
+      box-shadow: 0px 0px 1px 0px #AAAAAA;
+
+      .add-art-top{
+        flex-basis: 48px;  
+        flex-grow: 0; 
+        flex-shrink: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 12px;
+        margin-left: 13px;
+
+        .add-picture1 {
+          border-radius: 25px;
+          width: 45px;
+          height: 45px;
+          border:1px solid lightgrey;
+        }
+        .add-name2{
+          color: #222;
+          font-family: Arial;
+          text-align: center;
+          font-size: 18px;
+          margin-left: 15px;
+        }
+      }
+      .add-art-text{ 
+        flex-basis: 255px;
+        border-bottom: 2px solid lightgrey;
+        margin-top:10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-y: scroll;
+        font-family: Arial;
+        font-size: 17px;
+      }
+      .add-art-pic{
+        padding: 10px 10px 0px 10px;
+        flex-basis: 25%;
+        flex-grow: 2; 
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid lightgrey;
+        flex-wrap: wrap;
+
+        .add-picture2 {
+          height: 110px;
+          border:1px solid lightgrey;
+          margin-left: 13px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+      }
+
+      .add-art-bot{
+        flex-basis: 15%;  
+        margin: 10px 0 10px 0;
+        flex-grow: 0; 
+        flex-shrink: 0;
+
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .add-attach-button{
+          flex-basis: 10px; 
+          width: 10px;
+          height: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+          font-size: 20px;
+          color: grey;
+          cursor: pointer;
+        }
+
+        .add-empty-space{
+        flex-grow: 1; 
+        flex-shrink: 1; 
+        }
+
+        .add-send-button{
+            right: 0px;
+            margin-right: 20px;
+            padding: 6px 10px 6px 10px;
+            background-color: $left-background;
+            border-radius: 2px;  
+            vertical-align: middle;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: #FEFEFE;
+          }
+
+          .add-add-button{
+            margin-right: 20px;
+            padding: 6px 10px 6px 10px;
+            background-color: $common-green;
+            border-radius: 2px; 
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: $lightgrey-bckgnd;
+            cursor: pointer;
+            text-align: center;
+          }
+
+          .add-item-sign:hover{
+            cursor: pointer;
+          }
+
+          .add-send-button:hover{
+            background-color: #303030;
+            color: #CECECE;
+            cursor: pointer;
+          }
+
+          .add-add-button:hover{
+            background-color: $common-green;
+            color: #CECECE;
+            cursor: pointer;
+          }
+        }
+      } 
+/*------------- Ready articles --------------------------------*/
+      .article-block{   
+      display: flex; 
+      flex-direction: column;   
+      margin-bottom: 20px;
+      border: 1px solid lightgrey;
+      background-color: #FEFEFE;          /***********/
+      min-height: 30%;
+
+      box-shadow: 0px 0px 1px 0px #AAAAAA;
+
+      .art-top{
+        flex-basis: 48px;  
+        flex-grow: 0; 
+        flex-shrink: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        margin-left: 13px;
+        margin-right: 19px;
+
+        .picture1 {
+          margin-top: 12px;
+          border-radius: 25px;
+          width: 45px;
+          height: 45px;
+          border:1px solid lightgrey;
+        }
+        .art-aligner{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-top: 12px;
+          margin-left: 15px;
+
+          .name2{
+            color: #444;
+            font-family: Arial;
+            text-align: center;
+            font-size: 18px;
+          }
+          .article-date{
+            color: $middle-gray;
+            font-family: Arial;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+        .empty-space2{
+          flex-grow: 1; 
+          flex-shrink: 1; 
+        }
+
+        .post-action{
+          color: $middle-gray;
+          cursor: pointer;
+          letter-spacing: 3px;
+          font-size: 21px;
+          font-weight: bold;
+        }
+      }
+      .art-text{ 
+        flex-basis: 255px;
+        border-bottom: 2px solid lightgrey;
+        margin-top:10px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-y: scroll;
+        font-family: Arial;
+        font-size: 17px;
+      }
+      .art-pic{
+        padding: 10px 10px 0px 10px;
+        flex-basis: 25%;
+        flex-grow: 2; 
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid lightgrey;
+        flex-wrap: wrap;
+
+        .picture2 {
+          height: 110px;
+          border:1px solid lightgrey;
+          margin-left: 13px;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+      }
+
+      .art-bot{
+        flex-basis: 15%;  
+        margin: 10px 0 0px 0;
+        padding-bottom: 10px;
+        flex-grow: 0; 
+        flex-shrink: 0;
+
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-bottom: 2px solid lightgrey;
+
+        .art-features{
+          align-self: flex-end;
+          margin-left: 20px;
+          font-family: Tahoma;
+          font-size: 17px;
+          color: $dark-grey;
+          cursor: pointer;
+        }
+
+        .empty-space{
+          flex-grow: 2; 
+          flex-shrink: 2; 
+        }
+
+          .buy-button{
+            margin-right: 20px;
+            padding: 6px 10px 6px 10px;
+            background-color: $common-green;
+            border-radius: 2px; 
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: $lightgrey-bckgnd;
+            cursor: pointer;
+            text-align: center;
+          }
+
+          .item-sign:hover{
+            cursor: pointer;
+          }
+
+          .buy-button:hover{
+            background-color: $common-green;
+            color: #CECECE;
+            cursor: pointer;
+          }
+        }
+
+        .art-comments{
+          flex-basis: 15%;  
+          margin: 0px 20px 10px 20px;
+          flex-grow: 1; 
+          flex-shrink: 0;
+          .show-all-comments{
+
+          }
+          .comments{
+
+          }
+          .add-comment{
+
+          }
+        }
+      } 
+    }
+  }
+}

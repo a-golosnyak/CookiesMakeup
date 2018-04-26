@@ -1,0 +1,31 @@
+{
+  "name": "cookiesmakeup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "sass": "^1.0.0-beta.5.2"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shitikovkirill/CookiesMakeup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shitikovkirill/CookiesMakeup/issues"
+  },
+  "homepage": "https://github.com/shitikovkirill/CookiesMakeup#readme"
+}

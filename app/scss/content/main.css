@@ -1,0 +1,21 @@
+.center {
+  display: flex;
+  flex-direction: column;
+  background-color: #EEEEEE;
+  flex-grow: 6; }
+  .center .content {
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+    flex-grow: 6; }
+    .center .content .content-wrapper {
+      flex-basis: 67%;
+      /* 800px */
+      background-color: #EEEEEE; }
+      .center .content .content-wrapper .article-block {
+        margin-bottom: 20px;
+        border: 1px solid #aaa;
+        background-color: #FEFEFE;
+        height: 512px; }
+
+/*# sourceMappingURL=main.css.map */

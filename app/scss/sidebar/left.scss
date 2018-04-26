@@ -1,0 +1,93 @@
+@import "navigation-menu";
+.left{
+  display: flex;
+  flex-direction: column;
+  background: $left-background;
+  font-family: Arial, serif;
+  width: $left-weight;
+
+  .site-logo{
+    @extend %head-height;
+
+    background: $left-element-background;
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Arial, serif;
+    letter-spacing: -1px;
+ /*   padding: 18px 0 0 21px; */
+  }
+  .profile{
+    @extend %left-margin;
+    display: flex;
+    padding-right: 15px;
+    
+    .photo{
+        padding: 20px 15px 15px 15px;
+        background: $left-element-background;
+        width: 140px;
+        .round {
+        border-radius: 67px;
+        width: 135px;
+        height: 135px;
+        border:1px solid lightgrey;
+      }
+      .name{
+        color: rgb(210, 210, 210);
+        font-family: Arial;
+        text-align: center;
+        font-size: 18px;
+        padding: 7px 0 0 0;
+        word-wrap: break-word;
+      }
+    }
+    .profiledata{
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+      justify-content: space-between;
+
+      .item{
+        display: flex;
+        background: $left-element-background;
+        margin-top: 0;
+        font-size: 7px;
+        color: rgb(180, 180, 180);
+        cursor: pointer;
+
+        .item-sign{
+          border-radius: 10px;
+          width: 10px;
+          height: 20px;
+          margin: 4px;
+          padding: 1px;
+          font-size: 20px;
+        }
+
+        .item-content{
+          justify-content: space-between;
+          text-align: center;
+          vertical-align: middle;
+          width: 100%;
+          font-size: 10px;
+          margin-left: 6px;
+          padding: 4px;
+
+          p:last-child{
+            padding-top: 1px;
+            font-size: 11px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .menu{
+    @extend %left-margin;
+    width: 260px;
+    margin-top: 6px;
+    ul.nav{
+      background: $left-element-background;
+    }
+  }
+}
