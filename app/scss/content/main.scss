@@ -51,12 +51,7 @@
         margin-top: 12px;
         margin-left: 13px;
 
-        .add-picture1 {
-          border-radius: 25px;
-          width: 45px;
-          height: 45px;
-          border:1px solid lightgrey;
-        }
+        
         .add-name2{
           color: #222;
           font-family: Arial;
@@ -300,9 +295,9 @@
             text-align: center;
           }
 
-          .item-sign:hover{
+ /*         .item-sign:hover{
             cursor: pointer;
-          }
+          }   */
 
           .buy-button:hover{
             background-color: $common-green;
@@ -313,20 +308,50 @@
 
         .art-comments{
           flex-basis: 15%;  
-          margin: 0px 20px 10px 20px;
+          margin: 10px 20px 10px 20px;
           flex-grow: 1; 
           flex-shrink: 0;
+ /*        display: flex;
+          flex-direction: column; */
+
           .show-all-comments{
-
+            padding: 5px;
+            background-color:  $grey-commentbckgnd;
+            font-family: Tahoma;
+            font-size: 14px;
+            color: $middle-gray;
+            text-align: center;
+            cursor: pointer;
           }
-          .comments{
+ /*         .comments{
 
-          }
+          } */
+
           .add-comment{
+            padding-top: 10px;
+            border-top: solid $grey-commentbckgnd 2px;
+            display: flex;
+            flex-direction: row;
 
+            .new-comment-input{
+              padding-left: 20px;
+              border: 0px solid;
+              overflow: visible;
+              font-family: Tahoma;
+              font-size: 16px;
+            }
+            .new-comment-input:focus{
+              outline: none;
+            }
           }
         }
       } 
     }
   }
+  .add-picture1 {
+          border-radius: 25px;
+          width: 45px;
+          height: 45px;
+          border:1px solid lightgrey;
+        }
 }

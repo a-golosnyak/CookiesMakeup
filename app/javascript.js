@@ -16,3 +16,15 @@ document.getElementById('btn').onclick = function() {
 }
 
 
+function adjustHeight(){
+/*    var dif = textarea.scrollHeight - textarea.clientHeight
+    if (dif){
+        if (isNaN(parseInt(textarea.style.height))){
+            textarea.style.height = textarea.scrollHeight + "px"
+        }else{
+            textarea.style.height = parseInt(textarea.style.height) + dif + "px"
+        }
+    }*/
+    alert("Событие!")
+}
+
