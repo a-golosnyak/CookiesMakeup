@@ -23,3 +23,21 @@ document.getElementById('btn2').onclick = function() {
     }
 
 }
+
+
+function adjustHeight(textarea)
+{
+    var dif = textarea.scrollHeight - textarea.clientHeight
+
+    if (dif)
+    {
+        if (isNaN(parseInt(textarea.style.height)))
+        {
+            textarea.style.height = textarea.scrollHeight + "px"
+        }
+        else
+        {
+            textarea.style.height = parseInt(textarea.style.height) + dif + "px"
+        }
+    }   
+}

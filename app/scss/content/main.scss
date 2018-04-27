@@ -332,9 +332,12 @@
             border-top: solid $grey-commentbckgnd 2px;
             display: flex;
             flex-direction: row;
+          /*  justify-content: center;*/
+          align-items: center;
 
             .new-comment-input{
               padding-left: 20px;
+              width: 96%;
               border: 0px solid;
               overflow: visible;
               font-family: Tahoma;
